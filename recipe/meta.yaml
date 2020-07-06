@@ -1,5 +1,5 @@
 {% set name = "access" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e3f8c939f8d7c8abae6b7b4b12e02d6f6f357495d42d047c189d009fde379ba5
+  sha256: c8516a834a45538292640bb25c96ffab0db80545dcc5303fbdc199670c6d96e8
 
 build:
   noarch: python
