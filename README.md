@@ -5,7 +5,7 @@ Home: https://access.readthedocs.io/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: classical and novel measures of spatial accessibility to services
 
