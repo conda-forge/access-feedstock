@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'classical and novel measures of spatial accessibility to services'
+  summary: classical and novel measures of spatial accessibility to services
 
   description: |
     access is a class and function for calculating the spatial accessibility
