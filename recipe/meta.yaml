@@ -1,5 +1,5 @@
 {% set name = "access" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,30 +7,36 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c8516a834a45538292640bb25c96ffab0db80545dcc5303fbdc199670c6d96e8
+  sha256: 2b72b7ef277671d4fca1732cf2b342e2773359c26b7e16d237ff8ce42d32c191
 
 build:
   noarch: python
+
   number: 1
+
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.5
     - pip
     - setuptools
     - wheel
+    - python >=3.6
+
   run:
-    - python >=3.5
-    - scipy >=0.11
+    - geopandas
     - numpy >=1.3
     - pandas >=0.23.4
+    - python >=3.6
     - requests >=2
 
 test:
-  # Other tests run through CI.
   imports:
     - access
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://access.readthedocs.io/
