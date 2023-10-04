@@ -1,17 +1,17 @@
-About access
-============
+About access-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/access-feedstock/blob/main/LICENSE.txt)
 
 Home: https://access.readthedocs.io/
 
 Package license: BSD-3-Clause
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/access-feedstock/blob/main/LICENSE.txt)
-
 Summary: classical and novel measures of spatial accessibility to services
 
 Development: https://github.com/pysal/access
 
-Documentation: https://access.readthedocs.io/
+Documentation: https://access.readthedocs.io/en/latest/
 
 access is a class and function for calculating the spatial accessibility
 of resources.  It is designed for python 3.5 and higher.
