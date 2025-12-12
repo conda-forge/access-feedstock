@@ -1,5 +1,6 @@
 {% set name = "access" %}
-{% set version = "1.1.10" %}
+{% set version = "1.1.10.post2" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 22fcc61b5bdb4ddc64378e7906ba7cee53d4221041ecc625ebd1dfd1348be5d2
+  sha256: 4d42e57997a21e499ce57ec25c1c603a3b61ad0834e9601c2a8a5c0ffb75e2c5
 
 build:
   noarch: python
